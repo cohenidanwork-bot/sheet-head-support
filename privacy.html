@@ -23,7 +23,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="sub">Sheet Head: The Card Game &middot; Last updated 30 September 2026</p>
+<p class="sub">Sheet Head: The Card Game &middot; Last updated 5 November 2026</p>
 
 <p>Sheet Head is a card game you can play against the computer or online with friends. Playing against the
 computer needs no account. Online play asks you to sign in. This policy explains the small amount of data
@@ -32,21 +32,24 @@ the app collects and why.</p>
 <h2>What the app does not collect</h2>
 <ul>
   <li>No phone number or postal address, and no name or email unless you choose to play online (see below).</li>
-  <li>No contacts, photos, microphone, camera, or location data.</li>
+  <li>No contacts, photos, microphone or camera, and no GPS location.</li>
   <li>No payment information — the app is free and has nothing to buy.</li>
   <li>No advertising, no ad networks, and no data brokers.</li>
 </ul>
 
 <h2>What the app does collect</h2>
-<p>The app uses Google Firebase Analytics and Firebase Crashlytics to understand how the game is used and to
-find crashes. Through those services the following is collected:</p>
+<p>The app uses <strong>PostHog</strong> (PostHog Inc., data stored in the European Union) to understand how
+the game is used, and Firebase Crashlytics on iPhone to find crashes. Through those services the following
+is collected:</p>
 <ul>
   <li><strong>Anonymous usage events</strong> — for example that a game was started, which difficulty was
       chosen, that the tutorial was finished or abandoned, and that a game ended. These record what happened
       in the game, never anything you typed or any personal detail.</li>
-  <li><strong>A device identifier</strong> — a randomly generated Firebase installation ID for this app on
-      this device. It is not your Apple ID, your phone number, or your device's serial number, and it can be
-      reset by deleting and reinstalling the app.</li>
+  <li><strong>A device identifier</strong> — a random ID the app creates for itself on this device. It is not
+      your Apple ID, your phone number, or your device's serial number, and it is reset by deleting and
+      reinstalling the app.</li>
+  <li><strong>Device and approximate location</strong> — the app version, phone model, operating system,
+      language, and a country derived from your IP address (the IP address itself is not stored).</li>
   <li><strong>Crash and performance data</strong> — if the app crashes, a technical report describing where in
       the code it failed, along with the device model and iOS version.</li>
 </ul>
@@ -70,9 +73,10 @@ online games.</p>
 crashes. That is the whole purpose.</p>
 
 <h2>Who else sees it</h2>
-<p>Google processes this data as our analytics provider. It is not sold, rented, or shared with anyone else.
-See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a> for how Google
-handles it.</p>
+<p>PostHog processes usage data as our analytics provider, and Google processes crash reports and online-play
+data (Firebase). None of it is sold, rented, or shared with anyone else. See
+<a href="https://posthog.com/privacy">PostHog's privacy policy</a> and
+<a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
 
 <h2>Children</h2>
 <p>The game is rated 4+ and contains no objectionable content, but it is not directed at children under 13 and
@@ -80,7 +84,7 @@ does not knowingly collect personal information from them.</p>
 
 <h2>Your choices</h2>
 <p>Deleting the app stops all collection. To request deletion of the analytics data associated with your
-installation, email the address below and we will pass the request to Google.</p>
+installation, email the address below and we will delete it.</p>
 
 <h2 id="delete-account">Deleting your online account</h2>
 <p>In the app, open <strong>Play Online</strong> and tap <strong>Delete account</strong>. You sign in once
